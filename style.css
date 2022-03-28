@@ -1,33 +1,167 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: none;
-    box-sizing: border-box;
-    background: transparent;
-    font-family: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  background: transparent;
+  font-family: inherit;
+}
+a{
+  text-decoration: none;
+}
+a img {
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+button,
+textarea,
+select {
+  appearance: none !important;
+  border-radius: 0;
+}
+
+body{
+  width:100%;
+  height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("sky.jpg");
+  color: white;
+}
+
+#root{
+  width:80%;
+  height: 100vh;
+  position: absolute;
+}
+
+#img{
+  position: absolute;
+  top:30%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width: 600px; 
+}
+
+#description{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+}
+
+.inputs{
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 350px;
+  height: 60px;
+  border-radius: 50px;
+}
+
+#cityinput{
+  text-align: center;
+  font-size: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+#humidity{
+  position: absolute;
+  bottom: 10%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+}
+
+#wind{
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+}
+
+#tempature{
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+}
+
+@media only screen and (max-width: 1100px) {
+
+  #img{
+    width: 300px; 
   }
-  a{
-    text-decoration: none;
+
+  #description{
+    font-size: 40px;
   }
-  a img {
-    border: none;
+
+  #humidity{
+    font-size:40px
   }
-  
-  button,
-  a {
-    cursor: pointer;
-    color: inherit;
+
+  #wind{
+    font-size:40px
   }
-  
-  textarea {
-    resize: none;
+
+  #tempature{
+    font-size:40px
   }
-  
-  button,
-  textarea,
-  select {
-    appearance: none !important;
-    border-radius: 0;
+
+}
+
+@media only screen and (max-width: 550px) {
+
+  #img{
+    width: 200px; 
   }
-  
+
+  #description{
+    font-size: 20px;
+  }
+
+  #humidity{
+    font-size:20px
+  }
+
+  #wind{
+    font-size:20px
+  }
+
+  #tempature{
+    font-size:20px
+  }
+
+  .inputs{
+    width: 200px;
+    height: 35px;
+    border-radius: 50px;
+  }
+
+  #cityinput{
+    font-size: 15px;
+  }
+
+}
